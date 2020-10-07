@@ -19,6 +19,9 @@ function Change_sorting_bar_graphs(clicked_id){
 		
 		document.getElementById("a.PEMOQ").setAttribute('href', bar_path+'Results_PEMOQ.png')
 		document.getElementById("src.PEMOQ").setAttribute('src', bar_path+'Results_PEMOQ.png')
+		
+		document.getElementById("a.Rnonlin").setAttribute('href', bar_path+'Results_Rnonlin_calc.png')
+		document.getElementById("src.Rnonlin").setAttribute('src', bar_path+'Results_Rnonlin_calc.png')	
 	}
 	
 	if (clicked_id == "Value-sorted") {
@@ -35,5 +38,8 @@ function Change_sorting_bar_graphs(clicked_id){
 		
 		document.getElementById("a.PEMOQ").setAttribute('href', bar_path+'Results_PEMOQ_sorted.png')
 		document.getElementById("src.PEMOQ").setAttribute('src', bar_path+'Results_PEMOQ_sorted.png')
+		
+		document.getElementById("a.Rnonlin").setAttribute('href', bar_path+'Results_Rnonlin_calc_sorted.png')
+		document.getElementById("src.Rnonlin").setAttribute('src', bar_path+'Results_Rnonlin_calc_sorted.png')	
 	}
 }
