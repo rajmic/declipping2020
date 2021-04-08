@@ -15,7 +15,8 @@ http://www.tooplate.com/view/2100-artist
 -->
 
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="description" content="Web page accompanying the article: A Survey and an Extensive Evaluation of Popular Audio Declipping Methods, containing extra figures and listenable audio excerpts of the declipping algorithms.">
+<meta name="description" content="Web page accompanying the article: A Survey and an Extensive Evaluation of Popular Audio Declipping Methods, containing extra figures and 
+listenable audio excerpts of the declipping algorithms.">
 <meta name="keywords" content="Audio Clipping, Saturation, Declipping, Model, Sparsity, Learning, Optimization, Evaluation, Survey.">
 <meta name="author" content="Pavel Záviška">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -30,7 +31,7 @@ http://www.tooplate.com/view/2100-artist
 
 
 </head>
-<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50" onload="Change_inputSDR(0), Change_sorting_bar_graphs('Algorithm-sorted'), Change_plot_init()">
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50" onload="Table_values_init(), Change_sorting_bar_graphs('Algorithm-sorted'), Change_plot_init()">
 
 <!-- PRE LOADER -->
 <div class="preloader">
@@ -41,20 +42,36 @@ http://www.tooplate.com/view/2100-artist
 
 
 <!-- HOME SECTION -->
-<div class="container">
-     <div class="row">
-          <section id="home" class="parallax-section">
+<section id="home" class="parallax-section">
+	<div class="container">
+		<div class="row">
+          
 
                <div class="col-md-offset-2 col-md-10 col-sm-12">
                     <div class="home-wrapper">
                         <!-- <h3 class="wow fadeInUp" data-wow-delay="0.4s">Being an artist</h3> -->
+                         <!--<h1 class="wow fadeInUp" data-wow-delay="0.2s">Audio Declipping</h1>-->
+						 <!--<h3 class="wow fadeInUp" data-wow-delay="0.2s">A accompanying website for journal articles:</h3>-->
+						 
+					
                          <h1 class="wow fadeInUp" data-wow-delay="0.2s">A Survey and an Extensive Evaluation of Popular Audio Declipping Methods</h1>
                          <h4 class="wow fadeInUp" data-wow-delay="0.4s">
-							<a href="https://orcid.org/0000-0003-2221-2058">Pavel&nbsp;Záviška</a>, 
-							<a href="https://orcid.org/0000-0002-8381-4442">Pavel&nbsp;Rajmic, </a>
-							<a href="https://orcid.org/0000-0002-7602-4610">Alexey&nbsp;Ozerov, </a>
-							<a href="https://orcid.org/0000-0002-9332-6602">Lucas&nbsp;Rencker </a>
+							<a href="https://orcid.org/0000-0003-2221-2058">Pavel&nbsp;Záviška</a>,  
+							<a href="https://orcid.org/0000-0002-8381-4442">Pavel&nbsp;Rajmic</a>, 
+							<a href="https://orcid.org/0000-0002-7602-4610">Alexey&nbsp;Ozerov</a>, 
+							<a href="https://orcid.org/0000-0002-9332-6602">Lucas&nbsp;Rencker</a>
 						</h4>
+		
+						<!--<h4 class="wow fadeInUp" data-wow-delay="0.2s">and</h4>-->
+						
+					
+                        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Audio Declipping Performance Enhancement via Crossfading</h1>
+						<h4 class="wow fadeInUp" data-wow-delay="0.8s">
+							<a href="https://orcid.org/0000-0003-2221-2058">Pavel&nbsp;Záviška</a>, 
+							<a href="https://orcid.org/0000-0002-8381-4442">Pavel&nbsp;Rajmic</a>,
+							<a href="https://orcid.org/0000-0003-1806-5809">Ondřej&nbsp;Mokrý</a>
+						</h4>
+						
 						 
 						<div class="buttons">
 							<!--
@@ -69,10 +86,10 @@ http://www.tooplate.com/view/2100-artist
                     </div>
                </div>
 
-          </section>
-     </div>
-</div>
-
+          
+		</div>
+	</div>
+</section>
 
 <!-- ABSTRACT SECTION -->
 <section id="abstract" class="parallax-section">
@@ -82,17 +99,60 @@ http://www.tooplate.com/view/2100-artist
                <div class="col-md-12 col-sm-12">
                     <div class="abstract-thumb">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                            <h2>Abstract</h2>
+                            <h2>About</h2>
                          </div>
 						 <div class="wow fadeIn" data-wow-delay="0.4s">
-							<p>Dynamic range limitations in signal processing often lead to clipping, or saturation, in signals.
-              Audio declipping is the task of estimating the original audio signal given its clipped measurements and has attracted a lot of interest in recent years.
-              Audio declipping algorithms often make assumptions about the underlying signal, such as sparsity or low-rankness, as well as the measurement system.
-              In this paper, we provide an extensive review of audio declipping algorithms proposed in the literature.
-              For each algorithm, we present the assumptions being made about the audio signal, the modeling domain, as well as the optimization algorithm.
-              Furthermore, we provide an extensive numerical evaluation of popular declipping algorithms, on real audio data.
-              We evaluate each algorithm in terms of the Signal-to-Distortion Ratio, as well as using perceptual metrics of sound quality.
-              The article is accompanied with the repository containing the evaluated methods.</p>
+							<p>
+							  This is an website accompanying two articles about Audio Declipping (see abstracts below). 
+							  On this website you can find supplementary material such as a detailed description of the audio dataset used, 
+							  additional plots with results for each individual audio excerpt, a link to the repository with Matlab source codes,
+							  and last but not least, you can listen to the restored audio excerpts.
+							</p>
+						 </div>
+						 
+						 <div class="wow fadeInUp section-subtitle" data-wow-delay="0.2s">
+                            <h3>A Survey and an Extensive Evaluation of Popular Audio Declipping Methods</h3>
+                         </div>
+						 
+						 <div class="wow fadeIn" data-wow-delay="0.4s">
+							<p>
+							  <b>Abstract:</b>
+							  Dynamic range limitations in signal processing often lead to clipping, or saturation, in signals.
+							  Audio declipping is the task of estimating the original audio signal given its clipped measurements and has attracted a lot of interest in recent years.
+							  Audio declipping algorithms often make assumptions about the underlying signal, such as sparsity or low-rankness, as well as the measurement system.
+							  In this paper, we provide an extensive review of audio declipping algorithms proposed in the literature.
+							  For each algorithm, we present the assumptions being made about the audio signal, the modeling domain, as well as the optimization algorithm.
+							  Furthermore, we provide an extensive numerical evaluation of popular declipping algorithms, on real audio data.
+							  We evaluate each algorithm in terms of the Signal-to-Distortion Ratio, as well as using perceptual metrics of sound quality.
+							  The article is accompanied with the repository containing the evaluated methods.
+							</p>
+							<p>
+							<b>Citations:</b>
+							  <a href="bib/A_Survey_and_an_extensive_evaluation_of_popular_audio_declipping_methods.txt" download="A_Survey_and_an_extensive_evaluation_of_popular_audio_declipping_methods.txt">Plain&nbsp;Text</a>, 
+							  <a href="bib/A_Survey_and_an_extensive_evaluation_of_popular_audio_declipping_methods.bib" download="A_Survey_and_an_extensive_evaluation_of_popular_audio_declipping_methods.bib">BibTeX</a>.
+							</p>
+						 </div>
+						 
+						 <div class="wow fadeInUp section-subtitle" data-wow-delay="0.2s">
+                            <h3>Audio declipping performance enhancement via crossfaiding</h3>
+                         </div>
+						 
+						 <div class="wow fadeIn" data-wow-delay="0.4s">
+							<p>
+							  <b>Abstract:</b>
+							  Some audio declipping methods produce waveforms that do not fully respect the physical process of clipping, 
+							  which is why we refer to them as inconsistent. 
+							  This letter reports what effect on perception it has if the solution by inconsistent methods is forced consistent by postprocessing. 
+							  We first propose a simple sample replacement method, then we identify its main weaknesses and propose an improved variant. 
+							  The experiments show that the vast majority of inconsistent declipping methods significantly benefit from the proposed approach in terms of objective perceptual metrics. 
+							  In particular, we show that the SS&nbsp;PEW method based on social sparsity combined with the proposed method performs comparable to top methods from the consistent class, 
+							  but at a computational cost of one order of magnitude lower.
+							</p>
+							<p>
+							<b>Citations:</b>
+								<a href="bib/Audio_declipping_performance_enhancement_via_crossfading.txt" download="Audio_declipping_performance_enhancement_via_crossfading.txt">Plain&nbsp;Text</a>, 
+								<a href="bib/Audio_declipping_performance_enhancement_via_crossfading.bib" download="Audio_declipping_performance_enhancement_via_crossfading.bib">BibTeX</a>.
+							</p>
 						 </div>
                     </div>
                </div>
@@ -115,12 +175,20 @@ http://www.tooplate.com/view/2100-artist
                         </div>
 						<div class="wow fadeIn" data-wow-delay="0.4s">
 							<p>
-							Published version of the article is available <a href="https://ieeexplore.ieee.org/document/9281027">here</a>.
-							Postprint version is also available <a href="http://arxiv.org/abs/2007.07663">here</a>.
+							Published version of the survey article is available at <a href="https://ieeexplore.ieee.org/document/9281027">IEEE Xplore</a>.
+							Postprint version is also available on <a href="https://arxiv.org/abs/2007.07663">arXiv</a>.
+							</p>
+							<p>							
+							Preprint of the letter about performance enhancement via crossfading is available on <a href="https://arxiv.org/abs/2104.03074">arXiv</a>.
 							<br>
-							Following the idea of reproducible research, we make all the implementations freely available at the <a href="https://github.com/rajmic/declipping2020_codes">GitHub repository</a>. 
+							</p>
+							<p>
+							Following the idea of reproducible research, we make all the implementations freely available at the <a 
+href="https://github.com/rajmic/declipping2020_codes">GitHub repository</a>. 
 							<br>
-							Please note that LTFAT toolbox (version>=2.4.0, available <a href="https://ltfat.github.io">here</a>) must be installed and loaded in order to run the scripts and reproduce the data.</p>
+							Please note that LTFAT toolbox (version>=2.4.0, available <a href="https://ltfat.github.io">here</a>) must be installed and loaded 
+							in order to run the scripts and reproduce the results.
+							</p>
 					    </div>
                     </div>
                </div>
@@ -142,7 +210,11 @@ http://www.tooplate.com/view/2100-artist
                             <h2>Algorithms</h2>
                         </div>
 						<div class="wow fadeIn" data-wow-delay="0.4s">
-							<p>The following table contains abbreviations and full names of the algorithms used in the evaluation.</p>
+							<p>
+								The following table contains abbreviations and full names of the algorithms used in the evaluation.
+								<br>
+								Algorithms inconsistent in the reliable part of the clipped signal, i.e., those treated in the letter, are marked with an asterisk *.
+							</p>
 							
 							<p>							
 							<table style="width:100%">
@@ -151,7 +223,7 @@ http://www.tooplate.com/view/2100-artist
 									<th>Full name</th>
 								</tr>
 								<tr>
-									<td>C-OMP</td>
+									<td>C-OMP*</td>
 									<td>Constrained Orthogonal Matching Pursuit</td>
 								</tr>
 								<tr>
@@ -179,23 +251,23 @@ http://www.tooplate.com/view/2100-artist
 									<td>Reweighted &ell;<sub>1</sub>-minimization with Clipping Constraints using Douglas&ndash;Rachford (synthesis)</td>								
 								</tr>
 								<tr>
-									<td>SS EW</td>
+									<td>SS EW*</td>
 									<td>Social Sparsity with Empirical Wiener</td>
 								</tr>
 								<tr>
-									<td>SS PEW</td>
+									<td>SS PEW*</td>
 									<td>Social Sparsity with Persistent Empirical Wiener</td>
 								</tr>
 								<tr>
-									<td>CSL1</td>
+									<td>CSL1*</td>
 									<td>Compressed Sensing method minimizing &ell;<sub>1</sub>-norm</td>
 								</tr>
 								<tr>
-									<td>PCSL1</td>
+									<td>PCSL1*</td>
 									<td>Perceptual Compressed Sensing method minimizing &ell;<sub>1</sub>-norm</td>
 								</tr>
 								<tr>
-									<td>PWCSL1</td>
+									<td>PWCSL1*</td>
 									<td>Parabola-Weighted Compressed Sensing method minimizing &ell;<sub>1</sub>-norm</td>
 								</tr>
 								<tr>
@@ -207,7 +279,7 @@ http://www.tooplate.com/view/2100-artist
 									<td>Parabola-Weighted &ell;<sub>1</sub>-minimization using Douglas&ndash;Rachford (synthesis)</td>								
 								</tr>
 								<tr>
-									<td>DL</td>
+									<td>DL*</td>
 									<td>Dictionary Learning approach</td>
 								</tr>
 								<tr>
@@ -366,9 +438,20 @@ http://www.tooplate.com/view/2100-artist
                 </div>
 			</div>	
 				<!--<p style="margin-bottom: 20px"></p>		-->
-			<div class="wow fadeIn col-md-12 col-sm-12" data-wow-delay="0.6s" style="z-index:0">		
+				
+			<div class="wow fadeIn col-md-12 col-sm-12" data-wow-delay="0.2s" style="z-index:0">
+				<p>
+					The table below contains listenable excerpts from both articles.
+					It is possible to select the initial level of degradation (input SDR) and displayed evaluation metric.
+					Third option is relevant only for algorithms inconsistent in the reliable part, which are marked with&nbsp;*. 
+					To listen to results related only to the Audio Declipping Survey, leave the option Inconsistent&nbsp;restoration switched on.
+					The other two options relate to methods presented in the letter Audio declipping performance enhancement via crossfading.
+				</p>
+			</div>
+				
+			<div class="wow fadeIn col-md-12 col-sm-12" data-wow-delay="0.4s" style="z-index:0">		
 				<p style="padding-bottom:20px">
-					The playback can be started by selecting one of the table cells (the cells turn light blue when the cursor hovers over them).
+					The playback can be started by clicking on one of the table cells (the cells turn light blue when the cursor hovers over them).
 					Your browser must support HTML5 audio player.
 					Alternativelly, the file path is shown below the player and it can be downloaded by Save Link As ...
 				</p>
@@ -378,20 +461,25 @@ http://www.tooplate.com/view/2100-artist
 			<div class="chooser" style="margin-top:10px">
 				<p>
 					Select input SDR:
-					<a id="1dB" title="Show input SDR 1 dB" href="#" onclick="Change_inputSDR(0,this.id);return false;">1&nbsp;dB</a>
-					<a id="3dB" title="Show input SDR 3 dB" href="#" onclick="Change_inputSDR(1,this.id);return false;">3&nbsp;dB</a>            
-					<a id="5dB" title="Show input SDR 5 dB" href="#" onclick="Change_inputSDR(2,this.id);return false;">5&nbsp;dB</a>            
-					<a id="7dB" title="Show input SDR 7 dB" href="#" onclick="Change_inputSDR(3,this.id);return false;">7&nbsp;dB</a>            
-					<a id="10dB" title="Show input SDR 10 dB" href="#" onclick="Change_inputSDR(4,this.id);return false;">10&nbsp;dB</a>            
-					<a id="15dB" title="Show input SDR 15 dB" href="#" onclick="Change_inputSDR(5,this.id);return false;">15&nbsp;dB</a>            
-					<a id="20dB" title="Show input SDR 20 dB" href="#" onclick="Change_inputSDR(6,this.id);return false;">20&nbsp;dB</a>       
+					<a id="1dB" title="Show input SDR 1 dB." href="#" onclick="Change_inputSDR(0,this.id);return false;">1&nbsp;dB</a>
+					<a id="3dB" title="Show input SDR 3 dB." href="#" onclick="Change_inputSDR(1,this.id);return false;">3&nbsp;dB</a>            
+					<a id="5dB" title="Show input SDR 5 dB." href="#" onclick="Change_inputSDR(2,this.id);return false;">5&nbsp;dB</a>            
+					<a id="7dB" title="Show input SDR 7 dB." href="#" onclick="Change_inputSDR(3,this.id);return false;">7&nbsp;dB</a>            
+					<a id="10dB" title="Show input SDR 10 dB." href="#" onclick="Change_inputSDR(4,this.id);return false;">10&nbsp;dB</a>            
+					<a id="15dB" title="Show input SDR 15 dB." href="#" onclick="Change_inputSDR(5,this.id);return false;">15&nbsp;dB</a>            
+					<a id="20dB" title="Show input SDR 20 dB." href="#" onclick="Change_inputSDR(6,this.id);return false;">20&nbsp;dB</a>       
 				<br>			
 					Select table values:
-					<a id="none" title="Hide result values" href="#" onclick="Change_values(0,this.id);return false;">None</a>
-					<a id="dSDR" title="Show dSDR values" href="#" onclick="Change_values(1,this.id);return false;">∆SDR<sub>c</sub></a>            
-					<a id="PEAQ" title="Show PEAQ ODG values" href="#" onclick="Change_values(2,this.id);return false;">PEAQ&nbsp;ODG</a>            
-					<a id="PEMO_Q" title="Show PEMO-Q ODG values" href="#" onclick="Change_values(3,this.id);return false;">PEMO-Q&nbsp;ODG</a>
-					<a id="Rnonlin" title="Show Rnonlin values" href="#" onclick="Change_values(4,this.id);return false;">Rnonlin</a>
+					<a id="none" title="Hide result values." href="#" onclick="Change_values(0,this.id);return false;">None</a>
+					<a id="dSDR" title="Show ∆SDR values." href="#" onclick="Change_values(1,this.id);return false;">∆SDR<sub>c</sub></a>            
+					<a id="PEAQ" title="Show PEAQ ODG values." href="#" onclick="Change_values(2,this.id);return false;">PEAQ&nbsp;ODG</a>            
+					<a id="PEMO_Q" title="Show PEMO-Q ODG values." href="#" onclick="Change_values(3,this.id);return false;">PEMO-Q&nbsp;ODG</a>
+					<a id="Rnonlin" title="Show Rnonlin values." href="#" onclick="Change_values(4,this.id);return false;">Rnonlin</a>
+				<br>
+					Select postprocessing of reliable samples: 
+					<a id="rec" title="Show results of inconsistent restoration." href="#" onclick="Change_postprocessing(0,this.id);return false;">Inconsistent&nbsp;restoration</a>
+					<a id="RR" title="Show results with replaced reliable samples." href="#" onclick="Change_postprocessing(1,this.id);return false;">Replace&nbsp;Reliable</a>
+					<a id="CR" title="Show results with crossfaded reliable samples." href="#" onclick="Change_postprocessing(2,this.id);return false;">Crossfaded&nbsp;Replace</a>
 				</p>
 			</div>		
     
@@ -462,7 +550,7 @@ http://www.tooplate.com/view/2100-artist
 						<td class="clickable">X</td>
 					</tr>
 					<tr>
-						<td>C-OMP</td>
+						<td>C-OMP*</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
@@ -553,7 +641,7 @@ http://www.tooplate.com/view/2100-artist
 						<td class="clickable">X</td>
 					</tr>
 					<tr>
-						<td>SS EW</td>
+						<td>SS EW*</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
@@ -566,7 +654,7 @@ http://www.tooplate.com/view/2100-artist
 						<td class="clickable">X</td>
 					</tr>
 					<tr>
-						<td>SS PEW</td>
+						<td>SS PEW*</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
@@ -579,7 +667,7 @@ http://www.tooplate.com/view/2100-artist
 						<td class="clickable">X</td>
 					</tr>
 					<tr>
-						<td>CSL1</td>
+						<td>CSL1*</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
@@ -592,7 +680,7 @@ http://www.tooplate.com/view/2100-artist
 						<td class="clickable">X</td>
 					</tr>
 					<tr>
-						<td>PCSL1</td>
+						<td>PCSL1*</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
@@ -605,7 +693,7 @@ http://www.tooplate.com/view/2100-artist
 						<td class="clickable">X</td>
 					</tr>
 					<tr>
-						<td>PWCSL1</td>
+						<td>PWCSL1*</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
@@ -644,7 +732,7 @@ http://www.tooplate.com/view/2100-artist
 						<td class="clickable">X</td>
 					</tr>
 					<tr>
-						<td>DL</td>
+						<td>DL*</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
@@ -767,14 +855,14 @@ http://www.tooplate.com/view/2100-artist
                <div class="col-md-12 col-sm-12">
                     <!-- SECTION TITLE -->
                     <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                         <h2>Overall results</h2>
+                         <h2>Overall results of the survey</h2>
                     </div>
 					<div class="wow fadeIn" data-wow-delay="0.4s" style="margin-bottom:25px">
 						<p> 
-							In the following figures, the results of the declipping algorithms in terms of performance are presented.
-							The comparison is done in terms of three objective metrics — 
+							In the following figures, the performance of the declipping algorithms is presented.
+							The comparison is done in terms of four objective metrics — 
 							∆SDR<sub>c</sub> (SDR improvement computed on the clipped samples only),
-							PEAQ, and PEMO-Q. In the bar graphs that follow, algorithms
+							PEAQ, PEMO-Q, and Rnonlin. In the bar graphs that follow, algorithms
 							coming from the same family share the same color. If a method
 							was examined in both the analysis and the synthesis variant,
 							the analysis variant is graphically distinguished via hatching.
@@ -787,8 +875,8 @@ http://www.tooplate.com/view/2100-artist
 					<div class="chooser" style="margin-top:10px">
 						<p style="margin-bottom:1cm">
 							Select order of the bar graphs:
-							<a id="Algorithm-sorted" title="Sort values according to the s" href="#" onclick="Change_sorting_bar_graphs(this.id);return false;">Algorithm-sorted</a>
-							<a id="Value-sorted" title="Show input SDR 3 dB" href="#" onclick="Change_sorting_bar_graphs(this.id);return false;">Value-sorted</a>							
+							<a id="Algorithm-sorted" title="Sort values according to the algorithm order." href="#" onclick="Change_sorting_bar_graphs(this.id);return false;">Algorithm-sorted</a>
+							<a id="Value-sorted" title="Sort values from worst to best." href="#" onclick="Change_sorting_bar_graphs(this.id);return false;">Value-sorted</a>							
 						</p>
 					</div>
                </div>
@@ -848,6 +936,73 @@ http://www.tooplate.com/view/2100-artist
 </section>
 
 
+<!-- WORK SECTION -->
+<section id="work" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <!-- SECTION TITLE -->
+                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                         <h2>Results of the replacing approach</h2>
+                    </div>
+					<div class="wow fadeIn" data-wow-delay="0.4s" style="margin-bottom:25px">
+						<p> 
+							The figures below present average PEAQ ODG and PEMO-Q ODG values. 
+							The individual declipping algorithms are distinguished using different bar colors. 
+							Within a&nbsp;single bar, the lightest shade represents the quality of the originally declipped signal,
+              i.e., inconsistent in the reliable part. 
+							The respective medium shade marks the results of the Replace Reliable (RR) strategy, and finally, 
+							the darkest shade corresponds to Crossfaded Replace (CR). 
+							In addition, the black dotted lines represent the average ODG value of the clipped signals, 
+							and each black dashed line indicates the best result obtained in the Audio Declipping Survey.							
+						</p>
+					</div>
+					
+			   </div>
+			   
+			   <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.2s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a id="a.RR_CR_PEAQ" href="images/replace_reliable_results/Results_RR_CR_PEAQ.png" class="image-popup">
+                              <img id="src.RR_CR_PEAQ" src="images/replace_reliable_results/Results_RR_CR_PEAQ.png" class="img-responsive" alt="Average PEAQ results.">
+                         </a>
+                    </div>
+                    <div class="work-caption">
+						<h5>Average PEAQ results.</h5>
+					</div>
+               </div>
+			   
+			   <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.2s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a id="a.RR_CR_PEMOQ" href="images/replace_reliable_results/Results_RR_CR_PEMOQ.png" class="image-popup">
+                              <img id="src.RR_CR_PEMOQ" src="images/replace_reliable_results/Results_RR_CR_PEMOQ.png" class="img-responsive" alt="Average PEMO-Q results.">
+                         </a>
+                    </div>
+                    <div class="work-caption">
+						<h5>Average PEMO-Q results.</h5>
+					</div>
+               </div>
+			   
+			   <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.2s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a id="a.RR_CR_Rnonlin" href="images/replace_reliable_results/Results_RR_CR_Rnonlin.png" class="image-popup">
+                              <img id="src.RR_CR_Rnonlin" src="images/replace_reliable_results/Results_RR_CR_Rnonlin.png" class="img-responsive" alt="Average Rnonlin results.">
+                         </a>
+                    </div>
+                    <div class="work-caption">
+						<h5>Average Rnonlin results.</h5>
+					</div>
+               </div>
+			   
+		  </div>
+	 </div>
+</section>
+					
+
+
 
 <!-- FOOTER SECTION -->
 <footer id="footer" class="parallax-section">
@@ -855,7 +1010,7 @@ http://www.tooplate.com/view/2100-artist
         <div class="row">
 
                <div class="wow fadeInUp col-md-10 col-sm-12" data-wow-delay="0.2s">
-                    <p class="copyright-text">Copyright © 2020 Pavel Záviška. Design: Tooplate</p>
+                    <p class="copyright-text">Copyright © 2021 Pavel Záviška. Design: Tooplate</p>
                </div>
 
           </div>

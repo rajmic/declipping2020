@@ -27,7 +27,7 @@ audplayerstatus.html('<a href="'+filepath+'">'+filepath+'</a>');
 });
 
 
-$('.playerdiv').stick_in_parent();
+//$('.playerdiv').stick_in_parent();
 // .on("sticky_kit:stick", function(e) {
 //     $("#stickytable").css("background-color","rgb(100,100,100)");
 //     $("#stickytable").css("border-radius","5px");
