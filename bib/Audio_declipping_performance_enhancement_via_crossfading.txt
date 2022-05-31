@@ -1,1 +1,1 @@
-P. Záviška, P. Rajmic and O. Mokrý, "Audio Declipping Performance Enhancement via Crossfading," arXiv preprint arXiv:2104.03074, Apr. 2021.
+P. Záviška, P. Rajmic and O. Mokrý, "Audio Declipping Performance Enhancement via Crossfading," in Signal Processing, vol. 192, 108365, March 2022, doi:10.1016/j.sigpro.2021.108365.
