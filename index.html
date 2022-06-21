@@ -248,7 +248,9 @@ href="https://github.com/rajmic/declipping2020_codes">GitHub repository</a>.
 							<p>
 								The following table contains abbreviations and full names of the algorithms used in the evaluation.
 								<br>
-								Algorithms inconsistent in the reliable part of the clipped signal, i.e., those treated in the letter, are marked with an asterisk *.
+								Algorithms inconsistent in the reliable part of the clipped signal, i.e., those treated in the second article, are marked with an asterisk *.
+								<br>
+								Note that the analysis variant of Social Sparsity declipper (ASS) was introduced later in the above-mentioned conference paper and thus it is not part of the Declipping Survey nor the Crossfading article.
 							</p>
 							
 							<p>							
@@ -324,6 +326,14 @@ href="https://github.com/rajmic/declipping2020_codes">GitHub repository</a>.
 								<tr>
 									<td>Janssen</td>
 									<td>Janssen method for inpainting</td>
+								</tr>
+								<tr>
+									<td>ASS EW*</td>
+									<td>Analysis Social Sparsity with Empirical Wiener</td>
+								</tr>
+								<tr>
+									<td>ASS PEW*</td>
+									<td>Analysis Social Sparsity with Persistent Empirical Wiener</td>
 								</tr>
 							</table>
 							</p>
@@ -494,9 +504,6 @@ href="https://github.com/rajmic/declipping2020_codes">GitHub repository</a>.
 			
 			
 			<div class="chooser" style="margin-top:10px">
-				<p style="font-weight:bold">
-				Audio excerpts from the Analysis Social Sparsity algorithm will be added as soon as possible.
-				</p>
 				<p>
 					Select input SDR:
 					<a id="1dB" class="clickable" title="Show input SDR 1 dB." href="#" onclick="Change_inputSDR(0,this.id);return false;">1&nbsp;dB</a>
@@ -548,7 +555,7 @@ href="https://github.com/rajmic/declipping2020_codes">GitHub repository</a>.
 
 				<table class="comptable text-center errtable" class="col-md-12 col-sm-12" cellspacing="0" cellpadding="0"
 					id="errtable1">
-					<tr cellpadding="3px">
+					<tr cellpadding="3px", style="border-bottom: 3px double">
 						<td></td>
 						<td style="padding-left:20px; padding-right:20px;">01</td>
 						<td style="padding-left:20px; padding-right:20px;">02</td>
@@ -795,8 +802,34 @@ href="https://github.com/rajmic/declipping2020_codes">GitHub repository</a>.
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
 					</tr>
+					<tr style="border-bottom: 3px double">
+						<td >Janssen</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+					</tr>
 					<tr>
-						<td>Janssen</td>
+						<td>ASS EW*</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+						<td class="clickable">X</td>
+					</tr>
+					<tr>
+						<td>ASS PEW*</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
 						<td class="clickable">X</td>
@@ -830,7 +863,7 @@ href="https://github.com/rajmic/declipping2020_codes">GitHub repository</a>.
                     </div>
 					<div class="wow fadeIn" data-wow-delay="0.4s" style="margin-bottom:25px">
 						<p> 
-							The following figure presents the results of the declipping algorithms for each audio excerpt individually.
+							The following figure presents the results from the Audio Declipping Survey of the declipping algorithms for each audio excerpt individually.
 							The respective audio excerpt and objective metric can be selected using the buttons below.
 							In the plots that follow, algorithms coming from the same family share the same color. 
 							If a method was examined in both the analysis and the synthesis variant,
