@@ -40,6 +40,14 @@ h1 {
   line-height: normal;
 }
 
+h1.main-title {
+  font-size: 50px;
+}
+
+h1.article-titles{
+  font-weight: bold;
+}
+
 h2 {
   color: #575757;
   font-size: 35px;
@@ -65,8 +73,8 @@ h3 {
 }
 
 h4 {
-  color: #03AFF4; <!--#797979;-->
-  font-size: 10px;
+  color: #03AFF4;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -311,7 +319,7 @@ a:hover, a:active, a:focus {
 }
 
 .chooser a.clicked{
-	color: #03AFF4; //#0373f4;
+	color: #03AFF4; /*#0373f4;*/
 	font-weight: bold;
 }
 
@@ -412,12 +420,6 @@ td.clickable_right{
 	margin-bottom: 40px;
 }
 
-/*---------------------------------------
-  Contact section              
------------------------------------------*/
-
-
-
 
 /*---------------------------------------
   Footer section              
@@ -479,7 +481,7 @@ footer h4 {
 
 @media (max-width: 980px) {
 
- h1 {font-size: 30px;}
+ h1 {font-size: 20px;}
 
  #abstract .abstract-thumb {
   padding-left: 0px;
@@ -494,7 +496,7 @@ footer h4 {
 @media (max-width: 768px) {
 
   h1 {
-    font-size: 27px;
+    font-size: 20px;
   }
 
   h2 {font-size: 25px;}
@@ -515,9 +517,21 @@ footer h4 {
 
 @media (max-width: 580px) {
 
+  h1.main-title {
+    font-size: 35px;
+  }
+
+  h1.article-titles {
+    font-size: 15px;
+  }
+
   h3 {
     font-size: 14px;
     letter-spacing: 1px;
+  }
+
+  h4 {
+    font-size: 14px;
   }
 
   #about .abstract-thumb {
