@@ -479,7 +479,7 @@ footer h4 {
 
 @media (max-width: 980px) {
 
- h1 {font-size: 30px;}
+ h1 {font-size: 20px;}
 
  #abstract .abstract-thumb {
   padding-left: 0px;
@@ -494,7 +494,7 @@ footer h4 {
 @media (max-width: 768px) {
 
   h1 {
-    font-size: 27px;
+    font-size: 20px;
   }
 
   h2 {font-size: 25px;}
