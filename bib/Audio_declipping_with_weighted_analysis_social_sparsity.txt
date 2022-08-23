@@ -1,1 +1,1 @@
-P. Záviška and P. Rajmic, "Audio Declipping with (Weighted) Analysis Social Sparsity," arXiv preprint, arXiv:2205.10215, May 2022.
+P. Záviška and P. Rajmic, "Audio Declipping with (Weighted) Analysis Social Sparsity," 2022 45th International Conference on Telecommunications and Signal Processing (TSP), July 2022, pp. 407-412, doi: 10.1109/TSP55681.2022.9851269.
